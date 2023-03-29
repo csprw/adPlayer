@@ -70,7 +70,7 @@ ad3.onended = function() {
 
 
 function play_commercial(adNumber) {
-  console.log("PLAY COMMERCIAL: ", adNumber);
+  console.log("[Debug] play commercial: ", adNumber);
 
   var adName = "ad" + adNumber;
   var adElement = document.getElementById(adName);
@@ -95,7 +95,7 @@ function isInArray(value, array) {
 var lastSecond = null;
 var secondsToAd1 = 29;
 var secondsToAd2 = 17;
-var secondsToAd3 = 10;
+var secondsToAd3 = 12;
 var arr = [0];
 
 $(mainVid).on('timeupdate', function(e) {
