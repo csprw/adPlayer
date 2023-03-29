@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <title>Ad player</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- <script defer src="face-api.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script defer src="script.js"></script>
+  
+
+  <script >
+
+   function test() {
+    console.log("Test func!");
+   }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      width: 100vw;
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #buttonPlaceholder {
+      border: 1px solid rgba(89, 89, 89, 0.575);
+      width: 150px;
+      height: 20px;
+      position: absolute;
+      z-index: 99;
+      right: 200px;
+      bottom: 100px;
+      background: rgba(255, 255, 255, 0.629);
+      display: none;
+      text-align: center;
+      font-size: 14pt;
+    }
+
+    #buttonPlaceholder:hover {
+      cursor: pointer;
+      border: 1px solid black;
+      background: rgba(255, 255, 255, 0.739);
+      
+    }
+
+
+    .css-current-storage {
+      animation-name: color;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+
+
+    @keyframes color {
+      to {
+      background-color: rgba(255, 255, 255, 0.202);
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <video id="mainVid" width="1280" height="800" controls preload="auto">
+    <!-- <source   src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4" type="video/mp4"> -->
+    <source   src="videos/testvideo.mp4" type="video/mp4">
+    Your browser does not support this video format
+  </video>
+  
+  <video id="ad1" width="1280" height="800" preload="auto">
+    <!-- <source src="http://ftp.nluug.nl/pub/graphics/blender/demo/movies/ToS/tears_of_steel_720p.mov" type="video/mp4"> -->
+    <source src="videos/ad1.mp4" type="video/mp4">
+    Your browser does not support this video format
+  </video>
+
+  <video id="ad2" width="1280" height="800" preload="auto">
+    <!-- <source src="http://ftp.nluug.nl/pub/graphics/blender/demo/movies/ToS/tears_of_steel_720p.mov" type="video/mp4"> -->
+    <source src="videos/ad2.mp4" type="video/mp4">
+    Your browser does not support this video format
+  </video>
+
+  <video id="ad3" width="1280" height="800" preload="auto">
+    <!-- <source src="http://ftp.nluug.nl/pub/graphics/blender/demo/movies/ToS/tears_of_steel_720p.mov" type="video/mp4"> -->
+    <source src="videos/ad3.mp4" type="video/mp4">
+    Your browser does not support this video format
+  </video>
+
+
+  <div id="buttonPlaceholder" class="css-current-storage">
+    Skip ad
+  </div>
+</body>
+</html>
