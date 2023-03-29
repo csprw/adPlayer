@@ -11,7 +11,7 @@ var ad3 = document.getElementById("ad3");
 ad3.style.display = "none"
 
 mainVid.onloadeddata = function() {
-    mainVid.currentTime = 600;
+    mainVid.currentTime = 10;
     mainVid.play()
 };
 
