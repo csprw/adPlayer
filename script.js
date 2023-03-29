@@ -87,17 +87,15 @@ function play_commercial(adNumber) {
   
 }
 
-
 function isInArray(value, array) {
   return array.indexOf(value) > -1;
 }
 
-
 // For timeUpdates
 var lastSecond = null;
-var secondsToAd1 = 606;
-var secondsToAd2 = 609;
-var secondsToAd3 = 602;
+var secondsToAd1 = 29;
+var secondsToAd2 = 17;
+var secondsToAd3 = 10;
 var arr = [0];
 
 $(mainVid).on('timeupdate', function(e) {
